@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a.active hr{
+    display: block;
+}
+hr {
+    display: none; 
+  }
