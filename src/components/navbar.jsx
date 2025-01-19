@@ -38,8 +38,8 @@ const Navbar = () => {
           </div>
         </div>
         <Link to="/cart" className="relative">
-        <img src={carticon} className="w-5 w-min-5 mr-5" alt="" />
-        <p className="absolute right-[5px] bottom-[-5px] w-4 text-center leading-4 mr-2 bg-pink-600 text-white aspect-square rounded-full text-[9px]">10</p>
+        <img src={carticon} className="w-5 w-min-5 mr-20" alt="" />
+        <p className="absolute right-[5px] bottom-[-5px] w-4 text-center leading-4 mr-16 bg-pink-600 text-white aspect-square rounded-full text-[9px]">10</p>
       </Link>
       </div>
     </div>
