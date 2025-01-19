@@ -1,10 +1,9 @@
-import React from 'react'
+import React from 'react';
 import Hero from '../components/hero.jsx';
 import LatestColl from "../components/LatestColl.jsx";
 import OurPolicy from '../components/OurPolicy.jsx';
 
-
-function home() {
+function Home() {
   return (
     <div>
       <Hero />
@@ -14,4 +13,4 @@ function home() {
   );
 }
 
-export default home
+export default Home;
