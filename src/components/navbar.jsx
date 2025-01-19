@@ -10,17 +10,17 @@ const Navbar = () => {
 
   return (
 
-    <div className="bg-pink-50">
+    <div className="bg-pink-100">
     <div className="flex items-center justify-between py-4 font-medium w-full">
       <img src={logoname} className="w-36" alt="Logo" />
   
       <ul className="hidden sm:flex gap-5 text-sm text-pink-300">
-        <NavLink to="/" className="flex flex-col items-center gap-1" activeClassName="active">
+        <NavLink to="/" className="flex flex-col items-center gap-1" activeclassName="active">
           <p>HOME</p>
           <hr className="w-2 border-none h-[1.5px] bg-gray-700" />
         </NavLink>
   
-        <NavLink to="/collection" className="flex flex-col items-center gap-1" activeClassName="active">
+        <NavLink to="/collection" className="flex flex-col items-center gap-1" activeclassName="active">
           <p>COLLECTION</p>
           <hr className="w-2 border-none h-[1.5px] bg-gray-700" />
         </NavLink>
