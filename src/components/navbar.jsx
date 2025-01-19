@@ -27,7 +27,6 @@ const Navbar = () => {
       </ul>
   
       <div className="flex items-center gap-6">
-        <img src={searchicon} alt="" className="w-5 cursor-pointer" />
   
         <div className="group relative">
           <img src={profileicon} alt="" className="w-5 cursor-pointer" />
