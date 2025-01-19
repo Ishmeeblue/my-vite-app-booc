@@ -6,6 +6,9 @@ import girlglossinfo from "./girlglossinfo.jpeg";
 import girlmatteinfo from "./girlmatteinfo.jpeg";
 import girlglossswatch from "./girlglossswatch.jpeg";
 import girlmatteswatch from "./girlmatteswatch.jpg";
+import exchangeicon from "./exchangeicon.png";
+import qualityicon from "./qualityicon.png";
+import supporting from "./supporting.png";
 
 export const assets = {
     logo,
@@ -16,6 +19,9 @@ export const assets = {
     girlmatteinfo,
     girlglossswatch,
     girlmatteswatch,
+    exchangeicon,
+    supporting,
+    qualityicon,
 }
 
 export const products = [
