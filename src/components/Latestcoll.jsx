@@ -1,8 +1,11 @@
 import React,{ useContext} from 'react'
+import {ShopContext} from '../context/shopcontext'
 import  Title from './Title'
 
 
 const Latestcoll = () => {
+
+  const {products} = useContext(ShopContext);
 
 return (
     <div>
@@ -13,9 +16,10 @@ return (
         Unleash your inner beauty with our latest collection, designed to empower and inspire confidence in every shade.
         </p>
       </div>
-
-      
     </div>
+
+
+
     </div>
   )
 }
