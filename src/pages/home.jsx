@@ -6,7 +6,7 @@ import Latestcoll from '../components/Latestcoll.jsx';
 const home = () => {
   return (
     <div>
-      <Hero/>
+      <Hero />
       <Latestcoll />
     </div>
   )

@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { ShopContext } from '../context/shopcontext'
 import  Title from './Title'
 
 const Latestcoll = () => {
