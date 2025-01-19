@@ -10,11 +10,19 @@ const Navbar = () => {
 
   return (
 
+<<<<<<< HEAD
     <div className="bg-pink-300">
+=======
+    <div className="bg-pink-100">
+>>>>>>> 6cfd7c574c63890fd60f0fcf7f84098e958f3be8
     <div className="flex items-center justify-between py-4 font-medium w-full">
     <img src={logoname} className="w-36 object-cover rounded-lg" alt="Logo" />
   
+<<<<<<< HEAD
       <ul className="hidden sm:flex gap-5 text-sm text-white">
+=======
+      <ul className="hidden sm:flex gap-5 text-sm text-pink-300">
+>>>>>>> 6cfd7c574c63890fd60f0fcf7f84098e958f3be8
         <NavLink to="/" className="flex flex-col items-center gap-1" activeclassName="active">
           <p>HOME</p>
           <hr className="w-2 border-none h-[1.5px] bg-gray-700" />
