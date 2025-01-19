@@ -3,13 +3,13 @@ import Hero from '../components/hero.jsx';
 import Latestcoll from '../components/Latestcoll.jsx';
 
 
-const home = () => {
+function home() {
   return (
     <div>
       <Hero />
       <Latestcoll />
     </div>
-  )
+  );
 }
 
 export default home
