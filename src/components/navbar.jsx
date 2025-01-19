@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import logoname from '../assets/logoname.png';
-import searchicon from '../assets/searchicon.png';
 import profileicon from '../assets/profileicon.png';
 import carticon from '../assets/carticon.png';
 import { Link,NavLink } from 'react-router-dom';
