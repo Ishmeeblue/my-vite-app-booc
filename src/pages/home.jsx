@@ -1,13 +1,13 @@
 import React from 'react'
 import Hero from '../components/hero.jsx';
-import Latestcoll from '../components/Latestcoll.jsx';
+import LatestColl from "../components/LatestColl.jsx";
 
 
 function home() {
   return (
     <div>
       <Hero />
-      <Latestcoll />
+      <LatestColl />
     </div>
   );
 }
