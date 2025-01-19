@@ -1,4 +1,4 @@
-import React,{ useContext} from 'react'
+import React,{ useContext, useState} from 'react'
 import {ShopContext} from '../context/shopcontext'
 import  Title from './Title'
 
@@ -6,6 +6,7 @@ import  Title from './Title'
 const Latestcoll = () => {
 
   const {products} = useContext(ShopContext);
+  const [latestProducts,setLatestProducts] = useState([]);
 
 return (
     <div>
