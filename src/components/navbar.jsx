@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logoname from '../assets/logoname.png';
 import profileicon from '../assets/profileicon.png';
 import carticon from '../assets/carticon.png';
 import { Link,NavLink } from 'react-router-dom';
+import { ShopContext } from '../context/shopcontext';
+
 
 const Navbar = () => {
 
+const {getCartCount} = useContext(ShopContext);
 
   return (
 
@@ -39,7 +42,7 @@ const Navbar = () => {
         </div>
         <Link to="/cart" className="relative">
         <img src={carticon} className="w-5 w-min-5 mr-20" alt="" />
-        <p className="absolute right-[5px] bottom-[-5px] w-4 text-center leading-4 mr-16 bg-pink-600 text-white aspect-square rounded-full text-[9px]">10</p>
+        <p className="absolute right-[5px] bottom-[-5px] w-4 text-center leading-4 mr-16 bg-pink-600 text-white aspect-square rounded-full text-[9px]">{getCartCount()}</p>
       </Link>
       </div>
     </div>
