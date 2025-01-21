@@ -9,6 +9,7 @@ import girlmatteswatch from "./girlmatteswatch.jpg";
 import exchangeicon from "./exchangeicon.png";
 import qualityicon from "./qualityicon.png";
 import supporting from "./supporting.png";
+import staricon from "./staricon.png";
 
 export const assets = {
     logo,
@@ -22,6 +23,7 @@ export const assets = {
     exchangeicon,
     supporting,
     qualityicon,
+    staricon,
 }
 
 export const products = [
