@@ -11,15 +11,15 @@ const Navbar = () => {
 
     <div className="bg-pink-100">
     <div className="flex items-center justify-between py-4 font-medium w-full">
-      <img src={logoname} className="w-36" alt="Logo" />
+      <img src={logoname} className="w-36 ml-5" alt="Logo" />
   
       <ul className="hidden sm:flex gap-5 text-sm text-pink-700 ">
-        <NavLink to="/" className="flex flex-col items-center gap-1" activeclassName="active">
+        <NavLink to="/" className="flex flex-col items-center gap-1" activeclassname="active">
           <p>HOME</p>
           <hr className="w-2 border-none h-[1.5px] bg-gray-700" />
         </NavLink>
   
-        <NavLink to="/collection" className="flex flex-col items-center gap-1" activeclassName="active">
+        <NavLink to="/collection" className="flex flex-col items-center gap-1" activeclassname="active">
           <p>COLLECTION</p>
           <hr className="w-2 border-none h-[1.5px] bg-gray-700" />
         </NavLink>
