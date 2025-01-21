@@ -6,9 +6,10 @@ import { assets } from '../assets/assets';
 const product = () => {
 
     const { productId } = useParams();
-    const {products} = useContext(ShopContext);
+    const {products,currency} = useContext(ShopContext);
     const [productData,setProductData] = useState(false);
     const [image,setImage] = useState('')
+    const [shades,setShades] = useState('')
 
     const fetchProductData = async() => {
 
@@ -53,7 +54,17 @@ const product = () => {
               <img src={assets.staricon} alt="" className="w-3 5" />
               <img src={assets.staricon} alt="" className="w-3 5" />
               <img src={assets.staricon} alt="" className="w-3 5" />
-
+              <p className='pl-2 '>(122)</p>
+            </div>
+            <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
+            <p className='mt-5 text-gray-500 md:w-4/5 text-justify'>{productData.description}</p>
+            <div className='flex flex-col gap-4 my-8'>
+              <p>Select Shade</p>
+              <div className='flex gap-2'>
+                {productData.shades.map((item,index)=>(
+                <button onClick={()=>setShades(item)} className={`border py-2 px-4 bg-pink-50 ${item === shades ? 'border-pink-500' : '' }`} key={index}>{item}</button>
+              ))}
+              </div>
             </div>
         </div>
       </div>
