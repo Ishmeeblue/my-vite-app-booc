@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { products} from "../assets/assets";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 export const ShopContext = createContext();
 
@@ -9,7 +10,7 @@ const ShopContextProvider = (props) => {
     const currency = "₱";
     const deliveryfee = 50;
     const [cartItems,setCartItems] = useState({});
-
+    const navigate = useNavigate();
 
     const addToCart = async (itemId, shades) => {
     if (!shades) {
@@ -73,7 +74,7 @@ const value = {
     products, currency, deliveryfee,
     cartItems, addToCart,
     getCartCount,updateQuantity,
-    getCartAmount
+    getCartAmount,navigate
 }
     
 
