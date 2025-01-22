@@ -11,6 +11,8 @@ import qualityicon from "./qualityicon.png";
 import supporting from "./supporting.png";
 import staricon from "./staricon.png";
 import binicon from "./binicon.png";
+import gcash from "./gcash.png";
+import maya from "./maya.png";
 
 export const assets = {
     logo,
@@ -26,6 +28,8 @@ export const assets = {
     qualityicon,
     staricon,
     binicon,
+    gcash,
+    maya,
 }
 
 export const products = [
