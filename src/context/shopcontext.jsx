@@ -17,7 +17,6 @@ const ShopContextProvider = (props) => {
         return;
     }
 
-    // Create a deep copy of cartItems
     let cartData = structuredClone(cartItems);
 
     if (cartData[itemId]) {
@@ -43,10 +42,19 @@ const getCartCount = () => {
     return totalCount;
 }
 
+const updateQuantity = async (itemId,shades,quantity) => {
+
+    let cartData = structuredClone(cartItems);
+
+    cartData[itemId][shades] = quantity;
+
+    setCartItems(cartData);
+}
+
 const value = {
     products, currency, deliveryfee,
     cartItems, addToCart,
-    getCartCount
+    getCartCount,updateQuantity
 }
     
 

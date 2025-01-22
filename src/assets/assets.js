@@ -10,6 +10,7 @@ import exchangeicon from "./exchangeicon.png";
 import qualityicon from "./qualityicon.png";
 import supporting from "./supporting.png";
 import staricon from "./staricon.png";
+import binicon from "./binicon.png";
 
 export const assets = {
     logo,
@@ -24,6 +25,7 @@ export const assets = {
     supporting,
     qualityicon,
     staricon,
+    binicon,
 }
 
 export const products = [
